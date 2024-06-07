@@ -1,0 +1,156 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    border-color: rgb(223, 212, 212);
+    border-style: outset;
+}
+
+/* logo quả táo */
+.logo {
+    width: 200px;
+    height: 100px;
+    /* không vỡ ảnh */
+    object-fit: contain;
+}
+
+
+/* Danh mục */
+
+.danhmuc {
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    /* ẩn mấy cái iphone */
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    /* si chuột đến thị hiện ra */
+    display: block;
+    font-display: initial;
+}
+
+
+/* Search */
+
+.search-box {
+    /* căn chỉnh tự động */
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    /* xóa đường viền và mở rộng phần tử bên trong */
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-box button {
+    /* ẩn nền  */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* end search */
+
+
+/* Carousel */
+
+.carousel-item {
+    max-width: 100%;
+    height: 400px;
+}
+
+
+/* Card */
+
+.card:hover,
+.card:hover img {
+    background-color: hsl(190, 100%, 98%);
+    box-shadow: 0 0 10px white;
+    /* đổ bóng */
+    border-color: rgb(0, 0, 0);
+}
+
+.hinh1,
+.hinh2,
+.hinh3,
+.hinh4 {
+    width: 200px;
+    /* ngăn vỡ ảnh  */
+    object-fit: cover;
+    margin-left: 50px;
+}
+
+/* mũi tên */
+.page-link {
+    border-color: rgb(173, 159, 159);
+    font-weight: bolder;
+    color: black;
+}
+
+
+/*  Giảm giá */
+
+.sale {
+    border-radius: 15px;
+    border-style: inherit;
+    width: 20px;
+    height: 25px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    /* justify-content: center; */
+    /* căn chữ */
+    text-align: center;
+}
+
+/* cái phân trang 123 */
+.pagination {
+    font-size: 30px;
+    font-weight: 100;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+
+/* footer */
+
+.footer {
+    color: white;
+    padding-top: 40px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    /* ẩn gạch chân chính sách bảo mật  */
+}
+
+/*  */
+.social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.social-icons a:hover i {
+    /* icon cuối trang */
+    color: #007bff;
+}

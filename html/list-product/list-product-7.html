@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 15 Plus</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="product-list.css">
+    <script>
+        $(document).ready(function() {
+            $("#add").click(function() {
+                alert("Sản phẩm đã được thêm vào giỏ hàng!");
+                // Trả về trạng thái trước đó 
+                window.history.back();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#buy").click(function() {
+                alert("Mua thành công");
+                // Trả về trạng thái trước đó
+                window.history.back();
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container-fluid bg-light p-2">
+            <div class="row justify-content-between flex-wrap ">
+                <div class="col-sm-5 mb-2 mb-sm-0">
+                    <strong>Chào mừng đến với iPhone.vn</strong>
+                </div>
+
+                <div class="col-sm-auto text-nowrap">
+                    <a href="menu-layout.html" class="text-decoration-none text-black hovers"><i class="bi bi-house-door"></i> Trang chủ |</a>
+                    <i class="bi bi-truck "></i> Kiểm tra đơn hàng |
+                    <a href="Product.html" class="text-decoration-none text-black"><i class="bi bi-bag"></i> Cửa hàng |</a>
+                    <a href="weblab/Back_end.html" class="text-decoration-none text-black"><i class="bi bi-person-fill "></i> Tài khoản</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid p-5">
+            <div class="container row">
+                <!-- Logo -->
+                <div class="col-sm-auto">
+                    <img class="logo" src="logo.png" alt="">
+                </div>
+
+                <!-- Danh mục -->
+                <div class="col-sm-auto dropdown">
+                    <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                        <strong class="danhmuc">Danh mục</strong>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Product.html">Điện thoại</a></li>
+                        <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                        <li><a class="dropdown-item" href="#">Laptop</a></li>
+                    </ul>
+                </div>
+                <!-- Search -->
+                <div class="col-sm-auto">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tìm kiếm...">
+                        <button><i class="bi bi-search"></i></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="menu container-fluid  ">
+            <div class="container row  justify-content-center mb-5">
+                <div class="col-sm-auto col-md-auto">
+                    <strong>Menu |</strong>
+                </div>
+
+                <div class="col-sm-auto col-md-auto ">
+                    <div class="menu-item text-nowrap dropdown">
+                        <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                            Điện thoại
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Product.html">iPhone 15</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 14</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item text-nowrap dropdown">
+                        <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                            Cáp sạc
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Product.html">iPhone 15</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 14</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item text-nowrap dropdown">
+                        <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                            Ốp lưng
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Product.html">iPhone 15</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 14</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item text-nowrap"> Cường lực</div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto text-nowrap">
+                    <div class="menu-item"> Sạc dự phòng</div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item text-nowrap dropdown">
+                        <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                            Tai nghe
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Product.html">iPhone 15</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 14</a></li>
+                            <li><a class="dropdown-item" href="#">iPhone 13</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item  text-nowrap"> Smartwatch</div>
+                </div>
+
+                <div class="col-sm-auto col-md-auto">
+                    <div class="menu-item text-nowrap dropdown">
+                        <a href="Product.html" class="text-decoration-none text-black dropdown-toggle" data-bs-toggle="dropdown">
+                            Dịch vụ tiện ích
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Product.html">Đăng ký 3G</a></li>
+                            <li><a class="dropdown-item" href="#">Nạp thẻ điện thoại</a></li>
+                            <li><a class="dropdown-item" href="#">Thẻ game</a></li>
+                            <li><a class="dropdown-item" href="#">Mua gói truyền hình </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div id="demo" class="container carousel slide " data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="https://www.aptronixindia.com/media/rokanthemes/blog/images/5/g/5g_desktop_banner_try_1.png" alt="" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://phungiphone.com/data/image/banner-iphone13.png" alt="" class="d-block">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://shopdunk.com/images/thumbs/0021910_banner%20iphone%2015-3_PC_1600.jpeg" alt="" class="d-block">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+    </header>
+    <!-- end menu -->
+
+    <div class="container ">
+        <h5 class="mt-5"><strong>Danh mục < Chi tiết sản phẩm - iPhone 15</strong></h4>
+
+            <div class="row mt-4">
+                <div class="col-md-7">
+
+                    <!-- Carousel -->
+                    <div id="demo" class="container carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/303891/Slider/iphone-15-plus-thumb-yt-1020x570.jpg" alt="" class="d-block">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/303891/Slider/iphone-15-slider-3--2--1020x570.png" alt="" class="d-block">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/303891/Slider/vi-vn-iphone-15-plus-slider--(2).jpg" alt="" class="d-block">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/303891/Slider/vi-vn-iphone-15-plus-slider--(9).jpg" alt="">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="https://cdn.tgdd.vn/Products/Images/42/303891/Slider/vi-vn-iphone-15-plus-slider--(6).jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                    <!-- End carousel -->
+                </div>
+                <div class="col-md-5">
+                    <h2>iPhone 15 Plus</h2>
+                    <p><strong>Màu sắc:</strong> Xám, Bạc, Vàng</p>
+                    <p><strong>Bộ nhớ:</strong> 128GB hoặc 256GB</p>
+                    <p><strong>RAM:</strong> 6GB</p>
+                    <p><strong>Chip:</strong> Apple A16 Bionic</p>
+                    <p><strong>Màn hình:</strong> Super Retina XDR OLED, 6.7 inches</p>
+                    <p><strong>Camera sau:</strong> 3 camera, 12 MP + 12 MP + 12 MP</p>
+                    <p><strong>Camera trước:</strong> 12 MP</p>
+                    <p><strong>Pin:</strong> 5000 mAh</p>
+                    <p class="product-description">iPhone 15 là phiên bản mới nhất của dòng iPhone, được trang bị các công nghệ tiên tiến và thiết kế sang trọng. Với camera siêu nét, màn hình Super Retina XDR OLED và hiệu suất mạnh mẽ, iPhone 15 là lựa chọn lý tưởng cho những người
+                        yêu công nghệ.</p>
+                    <p><strong>Giá:</strong> 23.690.000đ</p>
+                    <button id="add" class="btn btn-primary">Thêm vào giỏ hàng</button>
+                    <button id="buy" class="btn btn-primary">Mua</button>
+
+                </div>
+            </div>
+    </div>
+
+    <!-- Body 4  sản phẩm -->
+    <div class="container bg-gradient ">
+        <div class="row mt-5">
+            <h5 class="sanpham">Các sản phẩm liên quan </h5>
+
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 pt-3">
+                <div class="card ">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg" class="hinh1 w-50 img-fluid mt-3" alt="Cinque Terre">
+                    <div class="card-body">
+                        <p class="bg-danger text-white w-50" style="border-radius: 10px; ">🔥Giảm giá</p>
+                        <p>Iphone 15 Pro Max</p>
+                        <a href="Product.html" class="btn btn-primary w-50">Mua</a> <br>
+                        <div class=" mt-2">
+                            <a href="#" class="btn border-black" style="font-size: 12px;"> 256GB</a>
+                            <a href="#" class="btn border-black" style="font-size: 12px;">512GB</a>
+                            <a href="#" class="btn border-black" style="font-size: 12px;">1TB</a>
+                            <a href="#" class="btn text-danger font-italic" style="font-size: 20px;">30.900.000đ</a>
+                            <ul>
+                                <li>Chip Apple A16 Bionic</li>
+                                <li>RAM: 6 GB</li>
+                                <li>Dung lượng: 256 GB</li>
+                                <li>Camera sau: Chính 48 MP & Phụ 12MP, 12 MP</li>
+                                <li>Camera trước: 12 MP</li>
+                                <li>Pin 3200 mAh, Sạc 20 W</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 pt-3">
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/303891/iphone-15-plus-hong-128gb-thumb-600x600.jpg" class="hinh2 w-50 img-fluid mt-3" alt="Cinque Terre">
+                    <div class="card-body">
+                        <p class="bg-danger text-white w-50" style="border-radius: 10px; ">🔥Giảm giá</p>
+                        <p>Iphone 15 Plus</p>
+                        <a href="Product.html" class="btn btn-primary w-50">Mua</a>
+                        <div class=" mt-2">
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;"> 128GB</a>
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;">256GB</a>
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;">512GB</a>
+                            <a href="" class="btn text-danger font-italic" style="font-size: 20px;">23.690.000đ</a>
+                            <ul>
+                                <li>Chip Apple A16 Bionic</li>
+                                <li>RAM: 6 GB</li>
+                                <li>Dung lượng: 128 GB</li>
+                                <li>Camera sau: Chính 48 MP & Phụ 12MP, 12 MP</li>
+                                <li>Camera trước: 12 MP</li>
+                                <li>Pin 4383 mAh, Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 pt-3">
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/281570/iphone-15-xanh-thumb-600x600.jpg" class="hinh3 w-50 img-fluid mt-3 " alt="Cinque Terre">
+                    <div class="card-body">
+                        <p class="bg-danger text-white w-50" style="border-radius: 10px; ">🔥Giảm giá</p>
+                        <p>Iphone 15</p>
+                        <a href="Product.html" class="btn btn-primary w-50">Mua</a>
+                        <div class=" mt-2">
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;"> 128GB</a>
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;">256GB</a> <br>
+                            <a href="Product.html" class="btn text-danger font-italic" style="font-size: 20px;">20.690.000đ</a>
+                            <ul>
+                                <li>Chip Apple A16 Bionic</li>
+                                <li>RAM: 6 GB</li>
+                                <li>Dung lượng: 128 GB</li>
+                                <li>Camera sau: Chính 48 MP & Phụ 12MP, 12 MP</li>
+                                <li>Camera trước: 12 MP</li>
+                                <li>Pin 4383 mAh, Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 pt-3">
+                <div class="card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-starlight-1-600x600.jpg" class="hinh4 w-50 img-fluid mt-3" alt="Cinque Terre">
+                    <div class="card-body">
+                        <p class="bg-danger text-white w-50" style="border-radius: 10px; ">🔥Giảm giá </p>
+                        <p>Iphone 13 128GB</p>
+                        <a href="Product.html" class="btn btn-primary  w-50">Mua</a>
+                        <div class=" mt-2">
+                            <a href="Product.html" class="btn border-black" style="font-size: 12px;"> 128GB</a><br>
+                            <a href="Product.html" class="btn text-danger font-italic" style="font-size: 20px;">15.690.000đ</a>
+                            <ul>
+                                <li>Chip Apple A16 Bionic</li>
+                                <li>RAM: 6 GB</li>
+                                <li>Dung lượng: 128 GB</li>
+                                <li>Camera sau: Chính 48 MP & Phụ 12MP, 12 MP</li>
+                                <li>Camera trước: 12 MP</li>
+                                <li>Pin 4383 mAh, Sạc 20 W</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer container-fluid bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Thông tin liên hệ</h5>
+                    <p>Địa chỉ: 123 Đường Tây Mỗ, Quận Quan Thanh, Thành phố Baria</p>
+                    <p>Điện thoại: 0123 789 456</p>
+                    <p>Email: DaoVietTam@example.com</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Chính sách</h5>
+                    <ul>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Điều khoản sử dụng</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Theo dõi chúng tôi</h5>
+                    <p>Theo dõi chúng tôi trên các mạng xã hội:</p>
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center py-3 border-top">
+            <p>©2018. Công ty cổ phần Thế Giới Di Động.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

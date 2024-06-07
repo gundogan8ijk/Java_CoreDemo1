@@ -1,0 +1,120 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+    border-color: rgb(223, 212, 212);
+    border-style: outset;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+/* Danh mục */
+
+.danhmuc {
+    font-size: 20px;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    font-display: initial;
+}
+
+.card:hover,
+.card:hover img {
+    background-color: hsl(190, 100%, 98%);
+    box-shadow: 0 0 10px white;
+    border-color: rgb(0, 0, 0);
+}
+
+
+/*  */
+
+.carousel-item {
+    max-width: 100%;
+    height: 400px;
+}
+
+
+/* Search */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* end search */
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+
+/* footer */
+
+.footer {
+    color: white;
+    padding-top: 40px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons i {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.social-icons a:hover i {
+    color: #007bff;
+}
+
+.footer {
+    position: relative;
+    clear: both;
+    /* Xóa bỏ float của các phần tử trước */
+    margin-top: 50px;
+    /* Tạo khoảng cách từ phía trên của footer */
+    padding-top: 20px;
+    background-color: #343a40;
+    color: white;
+}
